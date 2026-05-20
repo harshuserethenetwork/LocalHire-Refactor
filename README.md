@@ -1,4 +1,4 @@
-# LocalHire - MERN Job Portal Platform 🚀
+# LocalHire - Job Portal Platform 
 
 LocalHire is a modern, full-stack job recruitment platform built on the MERN stack. Designed with a strict Domain-Driven Architecture, it serves two distinct user groups—**Aspirants** (Job Seekers) and **Organizations** (Employers)—offering tailored dashboards, smart job recommendations, and seamless profile management.
 
@@ -8,7 +8,7 @@ LocalHire is a modern, full-stack job recruitment platform built on the MERN sta
 
 ---
 
-## ✨ Core Features
+## Core Features
 
 *   **Role-Based Dashboards:** Completely isolated experiences for Aspirants and Companies.
 *   **Smart Recommendation Engine:** Dynamically suggests jobs to Aspirants based on a matching algorithm evaluating their skills, preferred job type, and location.
@@ -27,7 +27,7 @@ LocalHire is a modern, full-stack job recruitment platform built on the MERN sta
 
 ---
 
-## 🚀 Quick Start (Local Development)
+##  Quick Start (Local Development)
 
 Think you can run this in 5 minutes? You can.
 
@@ -78,7 +78,7 @@ The app will be running at `http://localhost:5173`.
 
 ---
 
-## 🏗 Project Structure
+## Project Structure
 
 The codebase strictly follows Domain-Driven Design (DDD) to keep concerns separated and maintainable.
 
@@ -99,7 +99,7 @@ The codebase strictly follows Domain-Driven Design (DDD) to keep concerns separa
 
 ---
 
-## 🧪 Error Handling & Validation
+##  Error Handling & Validation
 
 *   **Global Catchers:** Every backend controller is wrapped in a `catchAsync` utility, entirely eliminating unhandled promise rejections.
 *   **Sanitization:** Sensitive fields (like `password`, `role`) are explicitly stripped from direct `req.body` updates to prevent privilege escalation.
@@ -107,7 +107,7 @@ The codebase strictly follows Domain-Driven Design (DDD) to keep concerns separa
 
 ---
 
-## 🔌 API Overview
+##  API Overview
 
 All routes are prefixed with `/api/v1/`.
 
@@ -121,7 +121,7 @@ All routes are prefixed with `/api/v1/`.
 
 ---
 
-## 🗺 Feature Deep Dive: The Recommendation System
+## Feature Deep Dive: The Recommendation System
 
 To avoid showing users empty dashboards, the recommendation system relies on a dynamic MongoDB `$or` query constraint rather than a rigid intersection constraint. 
 
@@ -132,7 +132,7 @@ To avoid showing users empty dashboards, the recommendation system relies on a d
 
 ---
 
-## 🎨 UI/UX Considerations
+##  UI/UX Considerations
 
 *   **Minimalism & Padding:** Heavy reliance on MUI's `<Paper>` and `<Container>` elements with deliberate whitespace mapping to create a "breathing" UI.
 *   **Wizard Patterns:** Profile updates are handled via a step-by-step interactive wizard rather than an intimidating 50-field mega-form.
